@@ -81,6 +81,10 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        ndk {
+            // 指定 universalApk 中要包含的 ABIs
+            abiFilters "arm64-v8a"
+        }
     }
     signingConfigs {
         debug {
